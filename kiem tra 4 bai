@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <!--bai 2: bam de doi mau-->
+
+    <div  >
+        <button id="changeColor">doi mau</button>
+    </div>
+
+    <script>
+    ///var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    const setBg = () => {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);/// random color number from 123456....
+    document.body.style.backgroundColor  = "#" + randomColor;
+    color.innerHTML = "#" + randomColor; /// #  +  random color number from 123456....
+}
+
+changeColor.addEventListener("click", setBg);
+setBg();
+    </script>
+
+
+
+
+
+
+<!--bai 3: create triangle-->
+
+<div id = "div1"></div>
+<script>
+   var i;
+   var j;
+   for (i=0 ; i<5 ; i++){  ///amount of lines
+      for (j=0 ; j<=i ; j++){ /// amount of number
+         var span= document.createElement("span"); //create span (for space)
+         var spanText=document.createTextNode(' 1'); // creating space
+         span.appendChild(spanText);                // execute it
+         document.getElementById("div1").appendChild(span);//result place
+      }
+      var para= document.createElement("p"); // creating rows
+      var paraText=document.createTextNode("");// create row space
+      para.appendChild(paraText);               //execute
+      document.getElementById("div1").appendChild(para);// result place
+   }
+</script>
+
+
+
+
+
+
+
+
+<!--bai 4: clock (not working :c )-->
+
+
+
+    <div onload="startTime()">
+        <div id="clock"></div>
+    </div>
+
+
+<script>
+function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
