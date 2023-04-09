@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#logo-page{
+    width: 70px;
+    
+}
+.nav-bar{
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: #ffff;
+    background-color: #E39695;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    margin: 0;
+    top: 0;
+    left: 0;  
+}
+.sub-nav{
+    padding-top: 25px;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.nav-bar a:hover{
+    color: rgba(255, 166, 0, 0.938);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {
+    margin: 0 -5px;
+    text-align: center;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+  }
+  
+
+  .move {
+    background: linear-gradient(0deg, #ffb6c1, #ffb6c1) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 5000ms;
+    --bg-h: 100%;
+     text-decoration: none;
+
+      
+  }
+  .move:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+
+
+  .aboutus {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .aboutus:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .aboutus:hover {
+   background-position: 0;
+  }
+  
+  .aboutus:hover::before{
+    width: 100%;
+  }
+  
+
