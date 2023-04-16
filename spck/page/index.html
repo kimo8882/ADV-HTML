@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="/spck/page/index.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saving these piece of shit</title>
+</head>
+<body>
+    <div class="header">
+    <img id="logo-page" src="https://pbs.twimg.com/profile_images/1495604211102494721/8GipdWx-_400x400.jpg" style="height: 40px; width: 40px;" alt="">
+    <ul>
+      <li><a  href="./index.html">HOME</a></li>
+      <li><a  href="">SUPPORT</a></li>
+
+    </ul>
+  </div>
+
+    <div id="body-home" style="margin-top: 10%; text-align: center;" >
+        <h2 class="aboutus" style="font-size: 100px;" > WE'RE CHILDREN SAVIOR </h2>
+        <p  style="text-align: center; color: black; margin-left: 700px; margin-right: 700px; text-align: justify ; margin-top: 30px;">
+            Some people benefit from a positive emphasis on effort and achievement. The best examples of this come from the United States where famously every child is encouraged to <a class="move" href="#">pursue their dreams, no matter how aspirational and unrealistic</a>. Those who succeed serve as role models and evidence the efficacy of pushing children to try to achieve anything
+        </p>
+    </div>
+
+ <div class="row" style="margin-left: 20% ; margin-top: 50px;">
+        <div class="column">
+           <div class="card" style="font-size: 50px;">
+              <p><i class="fa fa-smile-o" style="font-size: 50px;"></i></p>
+              <h3 style="margin-left: -25px;" >children 1st priority   </h3>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card" style="font-size: 50px;">
+                <p><i class="fa fa-user" style="font-size: 50px;"></i></p>
+                <h3 style="margin-left: -25px;" >align <br>support <span class="counter text-primary">6</span> </h3>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card" style="font-size: 50px; ">
+                <p><i class="fa-solid fa-stopwatch fa-shake" style="font-size:50px "></i></p>
+                <h3>hours made: <span class="counter text-primary">1000 </span>h+</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <button id="add" onClick="document.getElementById('myImage').src='pic_bulbon.gif'" onmouseover="change1()">
+      Dont click
+  </button>
+  <button id="add1" onClick="document.getElementById('myImage').src='pic_bulboff.gif'" onmouseover="change()">
+      Dont click
+  </button>
+  
+  <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+  
+  
+  
+  
+  <script>
+  function clicked(){
+      document.getElementById("elem").innerHTML = "clicked"
+  }
+  function change1() {
+    document.getElementById("add").click();
+  }
+  
+  function change() {
+    document.getElementById("add1").click();
+  }
+  </script>
+
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        $(".counter").counterUp({
+          delay: 2,
+          time: 5000,
+        });
+      });
+
+    </script>
+      <section class="banner"></section>
+      <script>window.addEventListener("scroll", () => {
+        let header = document.querySelector(".header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+      </script>
+</body>
+</html>
