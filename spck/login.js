@@ -9,7 +9,7 @@ function SignUp (){
     let username =document.getElementById('username').value;    
     let password =document.getElementById('password').value;
     if(CheckAccount(username,password) == 1){
-           location.href= "http://127.0.0.1:5500/spck/page/index.html" 
+           location.href= "joyful-gaufre-366ca9.netlify.app" 
     }
 
     else{
@@ -65,3 +65,5 @@ function CheckAccount(username,password){
  //           }
 //    }
 //};
+
+
