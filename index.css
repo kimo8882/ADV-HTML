@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#logo-page{
+  width: 70px;
+  
+}
+
+
+#body-home{
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(/spck/image/kids-bicycle-a-riding-graffiti-art-wallpaper-preview.jpg);
+background-size: cover;
+height: 100vh;
+}
+
+#urmomfat{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px 10px;
+}
+
+.row {
+  margin: 0 -5px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 120px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 100px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+
+.move {
+  background: linear-gradient(0deg, #055C9D, #055C9D) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 1000ms;
+  --bg-h: 100%;
+   text-decoration: none;
+
+    
+}
+.move:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+
+.aboutus {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutus:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutus:hover {
+ background-position: 0;
+}
+
+.aboutus:hover::before{
+  width: 100%;
+}
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Calibri;
+}
+
+body {
+  background: white;
+  height: 200vh;
+}
+
+.header {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: pink;
+  transition: 0.1s;
+  transition-delay: 0.1s;
+  z-index: -1;
+}
+
+.header.sticky {
+  padding: 15px 150px;
+}
+
+.header.sticky::after {
+  height: 100%;
+}
+
+.header .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.header ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.header.sticky .logo,
+.header.sticky ul li a {
+  color: black;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+}
+
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  visibility: hidden;
+}
+
+
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+
+}
+
+
+.transform {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.transform::before,
+.transform::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  width: fit-content;
+}
+.transform::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.transform::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #FF007F;
+  font-size: 50px;
+}
+
+.transform:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.transform:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.transform span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.transform:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+
+.buttoncss{
+
+margin-top: 100px;
+margin-bottom: 50px;
+}
+
+
+
+
